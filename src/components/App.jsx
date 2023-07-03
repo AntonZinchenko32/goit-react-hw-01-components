@@ -1,7 +1,10 @@
-import Profile from './Profile.jsx'
+import Profile from './Profile/Profile.jsx'
+// import Statistics from './Statistics/Statistics.jsx'
+// import FriendList from './FriendList/FriendList.jsx'
 import user from '../user.json'
+// import data from '../data.json'
+// import friends from '../friends.json'
 
-console.log(user);
 
 export const App = () => {
   return (

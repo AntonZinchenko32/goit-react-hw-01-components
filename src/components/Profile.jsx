@@ -1,4 +1,5 @@
-// import css from './Profile.module.css'
+import css from './Profile.module.css'
+
 
 const Profile = ({ name, tag, location, avatarUrl, followers, views, likes }) => (
   <div className="profile">
@@ -8,7 +9,7 @@ const Profile = ({ name, tag, location, avatarUrl, followers, views, likes }) =>
       alt="User avatar"
       className="avatar"
     />
-    <p className="name">{name}</p>
+    <p className={css.name}>{name}</p>
     <p className="tag">{tag}</p>
     <p className="location">{location}</p>
   </div>

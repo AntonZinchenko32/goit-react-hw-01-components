@@ -11,7 +11,6 @@ export default function StatisticsItem({ id, label, percentage }) {
 }
 
 
-
 StatisticsItem.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,

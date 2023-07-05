@@ -1,8 +1,8 @@
 import css from './Statistics.module.css'
-
 import  StatisticsItem  from './StatisticsItem';
 
-function Statistics({ title, stats }) {
+
+export default function Statistics({ title, stats }) {
     
     return (
 
@@ -27,4 +27,4 @@ function Statistics({ title, stats }) {
 }
 
 
-export default Statistics;
+ 

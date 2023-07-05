@@ -1,5 +1,43 @@
 
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 250px;
+
+    background-color: white;
+}
+
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+
+    margin-top: 15px;
+
+    border-radius: 50%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    padding: 0;
+
+    list-style: none;
+}
+
+.statsItem:not(:last-child) {
+    margin-right: 15px;
+}
+
+.statsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

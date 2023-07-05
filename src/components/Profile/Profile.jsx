@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Profile = ({ name, tag, location, avatarUrl, followers, views, likes }) => (
 
     <div className={css.profile}>
-        <div className="description">
+        <div className={css.description}>
             <img
             src={avatarUrl}
             alt="User avatar"
@@ -15,16 +15,16 @@ const Profile = ({ name, tag, location, avatarUrl, followers, views, likes }) =>
             <p className="location">{location}</p>
         </div>
 
-        <ul className="stats">
-        <li>
+        <ul className={css.stats}>
+        <li className={css.statsItem}>
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
             <span className="label">Views</span>
             <span className="quantity">{views}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
         </li>

@@ -13,12 +13,12 @@ export default function Statistics({ title, stats }) {
             )}
         
             <ul className="stat-list">
-                {stats.map(stat => (
+                {stats.map(({id, label, percentage}) => (
                     <StatisticsItem
-                        key={stat.id}
-                        id={stat.id}
-                        label={stat.label}
-                        percentage={stat.percentage}
+                        key={id}
+                        id={id}
+                        label={label}
+                        percentage={percentage}
                     />
                 ))}
             </ul>

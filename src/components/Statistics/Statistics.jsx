@@ -12,7 +12,7 @@ export default function Statistics({ title, stats }) {
                 <h2 className="title">Upload stats</h2>
             )}
         
-            <ul className="stat-list">
+            <ul className={css.statList}>
                 {stats.map(({id, label, percentage}) => (
                     <StatisticsItem
                         key={id}

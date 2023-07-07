@@ -24,8 +24,8 @@ export default function FriendList({ friends }) {
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.exact({
         avatar: PropTypes.string,
-        name: PropTypes.string,
-        isOnline: PropTypes.bool,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
         id:PropTypes.number
     }))
 }

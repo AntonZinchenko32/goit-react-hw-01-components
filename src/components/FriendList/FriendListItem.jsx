@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
+
 import css from './FriendListItem.module.css'
 
-export default function FriendListItem ({ id, isOnline, avatar, name }) {
+export default function FriendListItem ({ isOnline, avatar, name }) {
     
     const { listItem, statusOnLine, statusOffLine, avatarStyled, nameStyled } = css;
 
@@ -21,12 +21,4 @@ export default function FriendListItem ({ id, isOnline, avatar, name }) {
         </li>
     ) 
 }
-
-
-FriendListItem.propTypes = {
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    avatar: PropTypes.string
-};
 

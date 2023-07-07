@@ -22,10 +22,10 @@
     background-color: green;
 }
 
-.avatar {
+.avatarStyled {
     margin-right: auto;
 }
 
-.name {
+.nameStyled {
     font-weight: bold;
 }

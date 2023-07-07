@@ -3,19 +3,21 @@ import css from './FriendListItem.module.css'
 
 export default function FriendListItem ({ id, isOnline, avatar, name }) {
     
+    const { listItem, statusOnLine, statusOffLine, avatarStyled, nameStyled } = css;
+
     return (
-        <li className={css.listItem}>
+        <li className={listItem}>
             <span
                 style={{width:'12px',
                         height: '12px',
                         borderRadius: '50%',
                         marginRight:'15px'}}
                 className= {isOnline ?
-                      css.statusOnLine
-                    : css.statusOffLine}
+                      statusOnLine
+                    : statusOffLine}
             ></span>
-            <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-            <p className={css.name}>{name}</p>
+            <img className={avatarStyled} src={avatar} alt="User avatar" width="48" />
+            <p className={nameStyled}>{name}</p>
         </li>
     ) 
 }

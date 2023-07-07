@@ -1,0 +1,24 @@
+.listItem:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 150px;
+
+    padding: 15px;
+
+    border: 1px solid black;
+    background-color:aliceblue;
+}
+
+.statusOffLine {
+    background-color: red;
+}
+
+.statusOnLine {
+    background-color: green;
+}

@@ -1,3 +1,11 @@
+
 .friendList {
     margin-top: 70px;
+    padding: 15px;
+
+    width: fit-content;
+
+    list-style: none;
+
+    background-color: gray;
 }

@@ -4,20 +4,23 @@ import PropTypes from "prop-types"
 
 
 export default function Statistics({ title, stats }) {
+
+    // Деструктуризуємо об'єкт стилів
+    const { statistics, statList, listItem, labelStyled, percentageStyled } = css;
     
     return (
 
-        <section className={css.statistics}>
+        <section className={statistics}>
         
             {title && (
                 <h2 className="title">{title}</h2>
             )}
         
-            <ul className={css.statList}>
+            <ul className={statList}>
                 {stats.map(({id, label, percentage}) => (
-                    <li key={id} className={css.listItem}>
-                        <span className={css.label}>{label}</span>
-                        <span className={css.percentage}>{percentage}</span>
+                    <li key={id} className={listItem}>
+                        <span className={labelStyled}>{label}</span>
+                        <span className={percentageStyled}>{percentage}</span>
                     </li>
                 ))}
             </ul>

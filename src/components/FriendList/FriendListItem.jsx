@@ -1,8 +1,8 @@
-
 import css from './FriendListItem.module.css'
 
 export default function FriendListItem ({ isOnline, avatar, name }) {
     
+    // Деструктуризуємо об'єкт стилів
     const { listItem, statusOnLine, statusOffLine, avatarStyled, nameStyled } = css;
 
     return (

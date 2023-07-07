@@ -26,10 +26,10 @@
     align-items: center;
 }
 
-.label {
+.labelStyled {
     margin-bottom: 10px;
 }
 
-.percentage {
+.percentageStyled {
     font-weight: bold;
 }

@@ -5,7 +5,6 @@
     align-items: center;
     margin-top: 20px;
     width: fit-content;
-    padding: 10px;
     
     background-color: azure;
     border: 1px solid black;
@@ -14,22 +13,28 @@
 .statList {
     display: flex;
     list-style: none;
+    margin: 0;
     padding: 0;
 }
-.listItem:not(:last-child) {
-    margin-right: 15px;
-}
+
 
 .listItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 20px;
+
+    width: 50px;
+    height: 50px;
 }
 
 .labelStyled {
     margin-bottom: 10px;
+    font-size: small;
 }
 
 .percentageStyled {
+    font-size: 24px;
     font-weight: bold;
 }

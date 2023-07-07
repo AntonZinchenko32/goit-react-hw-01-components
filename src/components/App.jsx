@@ -16,7 +16,9 @@ export const App = () => {
       {
         display: 'flex',
         flexDirection:'column',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        padding:'15px'
       }
     }
     >

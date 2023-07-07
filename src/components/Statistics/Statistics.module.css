@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 20px;
     width: fit-content;
     padding: 10px;
     
     background-color: azure;
+    border: 1px solid black;
 }
 
 .statList {

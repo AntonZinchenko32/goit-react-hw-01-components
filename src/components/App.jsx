@@ -12,7 +12,14 @@ import transactions from '../data-files/transactions.json'
 
 export const App = () => {
   return (
-    <>
+    <div style={
+      {
+        display: 'flex',
+        flexDirection:'column',
+        alignItems: 'center'
+      }
+    }
+    >
       <Profile
         name={user.username}
         tag={user.tag}
@@ -23,11 +30,11 @@ export const App = () => {
         likes={user.stats.likes}
       />
       
-      <Statistics title="Upload stats" stats={data} />;
+      <Statistics title="Upload stats" stats={data} />
       
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 };

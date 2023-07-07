@@ -8,13 +8,14 @@ export default function FriendListItem ({ id, isOnline, avatar, name }) {
             <span
                 style={{width:'12px',
                         height: '12px',
-                        borderRadius:'50%'}}
-                className={isOnline ?
+                        borderRadius: '50%',
+                        marginRight:'15px'}}
+                className= {isOnline ?
                       css.statusOnLine
                     : css.statusOffLine}
             ></span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+            <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={css.name}>{name}</p>
         </li>
     ) 
 }
